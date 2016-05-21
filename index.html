@@ -6,8 +6,10 @@
 	<title>Tetricss - Javascript/CSS HTML5 Tetris</title>
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="stylesheet" href="css/style.css">
-	<link rel="stylesheet" href="assets/vendor/css/normalize.css">
-	<script type="text/javascript" src="assets/vendor/js/jquery.min.js"></script>
+	<link rel="stylesheet" href="css/animations-custom.css">
+	<link rel="stylesheet" href="lib/vendor/css/normalize.css">
+	<script type="text/javascript" src="lib/vendor/js/jquery.min.js"></script>
+	<script type="text/javascript" src="js/object-definitions-tetrinomino.js"></script>
 	<script type="text/javascript" src="js/app.js"></script>
 </head>
 
@@ -23,49 +25,27 @@
 		</div>
 
 		<div class="game-board">
-		  <div class="tetromino i-block">
-		    <span></span>
-		    <span></span>
-		    <span></span>
-		    <span></span>
-		  </div>
-		  <div class="tetromino j-block">
-		    <span></span>
-		    <span></span>
-		    <span></span>
-		    <span></span>
-		  </div>
-		  <div class="tetromino l-block">
-		    <span></span>
-		    <span></span>
-		    <span></span>
-		    <span></span>
-		  </div>
-		  <div class="tetromino o-block">
-		    <span></span>
-		    <span></span>
-		    <span></span>
-		    <span></span>
-		  </div>
-		<div class="tetromino s-block">
-		    <span></span>
-		    <span></span>
-		    <span></span>
-		    <span></span>
-		  </div>
-		<div class="tetromino t-block">
-		    <span></span>
-		    <span></span>
-		    <span></span>
-		    <span></span>
-		  <span></span>
-		  </div>
-		<div class="tetromino z-block">
-		    <span></span>
-		    <span></span>
-		    <span></span>
-		    <span></span>
-		  </div>
+			<div class="tetromino i-block freefall">
+				<span></span><span></span><span></span><span></span>
+			</div>
+			<div class="tetromino j-block freefall delay10">
+				<span></span><span></span><span></span><span></span>
+			</div>
+			<div class="tetromino l-block">
+				<span></span><span></span><span></span><span></span>
+			</div>
+			<div class="tetromino o-block">
+				<span></span><span></span><span></span><span></span>
+			</div>
+			<div class="tetromino s-block freefall delay15">
+				<span></span><span></span><span></span><span></span>
+			</div>
+			<div class="tetromino t-block">
+				<span></span><span></span><span></span><span></span><span></span>
+			</div>
+			<div class="tetromino z-block">
+				<span></span><span></span><span></span><span></span>
+			</div>
 		</div>
 
 		<div class="next-up">

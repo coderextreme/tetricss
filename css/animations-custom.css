@@ -1,0 +1,24 @@
+/* Standard syntax */
+@keyframes freefall {
+    0%   {bottom: 800px;}
+    5%   {bottom: 760px;}
+    10%  {bottom: 720px;}
+    15%  {bottom: 680px;}
+    20%  {bottom: 640px;}
+    25%  {bottom: 600px;}
+    30%  {bottom: 560px;}
+    35%  {bottom: 520px;}
+    40%  {bottom: 480px;}
+    45%  {bottom: 440px;}
+    50%  {bottom: 400px;}
+    55%  {bottom: 360px;}
+    60%  {bottom: 320px;}
+    65%  {bottom: 280px;}
+    70%  {bottom: 240px;}
+    75%  {bottom: 180px;}
+    80%  {bottom: 140px;}
+    85%  {bottom: 120px;}
+    90%  {bottom: 80px;}
+    95%  {bottom: 40px;}
+    100% {bottom: 0px;}
+}
