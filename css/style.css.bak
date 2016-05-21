@@ -1,0 +1,188 @@
+body {
+	margin: 0;
+	position: relative;
+}
+
+.scoreboard {
+	width: 200px;
+	position: absolute;
+	left: 0px;
+	background: rgb(51, 51, 51) none repeat scroll 0% 0%;
+	height: 100px;
+	color: rgb(255, 255, 255);
+}
+
+.playing-field {
+	max-width: 100%;
+	width: 500px;	height: 100%;
+	background: rgba(0,0,0,0.3);
+	border: 1px solid #fff;
+	position: absolute;
+	height: 100vh;
+	left: 50%;
+	transform: translateX(-50%);
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  position: relative;
+  background: url("http://insideonemind.com/images/codepen/the-secret.jpeg") top center no-repeat;
+  background-size: cover;
+}
+
+.game-board {
+  width: 400px;
+  margin: 0 auto;
+  background: rgba(0, 0, 0, 0.2);
+  height: 100vh;
+  position: relative;
+  overflow: hidden;
+}
+
+.tetromino {
+  display: block;
+  position: absolute;
+  min-width: 40px;
+  min-height: 40px;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+}
+.tetromino.switched {
+  bottom: 0;
+}
+.tetromino span {
+  width: 40px;
+  height: 40px;
+  position: relative;
+  display: inline-block;
+  float: left;
+  border-right: 10px solid rgba(255, 255, 255, 0.3);
+  border-bottom: 10px solid rgba(255, 255, 255, 0.3);
+  border-left: 10px solid rgba(0, 0, 0, 0.3);
+  border-top: 10px solid rgba(0, 0, 0, 0.3);
+}
+
+.i-block {
+  width: 40px;
+  height: 160px;
+  bottom: 160px;
+}
+.i-block.switched {
+  width: 160px;
+  height: 40px;
+}
+.i-block span {
+  background: #3EBEFD;
+}
+
+.j-block {
+  width: 120px;
+  height: 80px;
+  bottom: 400px;
+  left: 160px;
+}
+.j-block.switched {
+  width: 80px;
+  height: 120px;
+}
+.j-block.switched span:nth-child(2) {
+  clear: none;
+}
+.j-block.switched span:nth-child(4) {
+  margin-right: 40px;
+}
+.j-block span {
+  background: #0070DE;
+}
+.j-block span:nth-child(2) {
+  clear: both;
+}
+
+.l-block {
+  -webkit-perspective: 1000;
+          perspective: 1000;
+  -webkit-transform-style: preserve-3d;
+          transform-style: preserve-3d;
+  -webkit-transform-origin: top left;
+          transform-origin: top left;
+  width: 120px;
+  height: 80px;
+  bottom: 280px;
+  left: 160px;
+}
+.l-block.switched {
+  -webkit-transform: rotateZ(90deg);
+          transform: rotateZ(90deg);
+}
+.l-block span {
+  background: #FF7F00;
+}
+
+.o-block {
+  width: 80px;
+  height: 80px;
+  bottom: 40px;
+  left: 320px;
+}
+.o-block span {
+  background: #FFDF00;
+}
+
+.s-block {
+  width: 120px;
+  height: 80px;
+  bottom: 520px;
+  left: 40px;
+}
+.s-block.switched {
+  width: 80px;
+  height: 120px;
+}
+.s-block span {
+  background: #C020C0;
+}
+.s-block span:nth-child(1) {
+  margin-left: 40px;
+}
+
+.t-block {
+  width: 120px;
+  height: 120px;
+  bottom: 160px;
+  left: 240px;
+}
+.t-block span {
+  background: #EF2000;
+}
+.t-block span:nth-child(1) {
+  left: 40px;
+}
+.t-block span:nth-child(2) {
+  clear: both;
+}
+.t-block span:nth-child(5) {
+  left: 40px;
+}
+
+.z-block {
+  width: 120px;
+  height: 80px;
+  bottom: 0;
+  left: 120px;
+}
+.z-block.switched {
+  -webkit-transform: rotateZ(90deg);
+          transform: rotateZ(90deg);
+  bottom: 20px;
+  left: 100px;
+}
+.z-block span {
+  background: #80DE01;
+}
+.z-block span:nth-child(3) {
+  clear: both;
+  margin-left: 40px;
+}
