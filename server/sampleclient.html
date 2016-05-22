@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>TetriCss Score Server Sample Client</title>
+</head>
+<body>
+	<h1>TetriCss Score Server Sample Client</h1>
+</body>
+<script language="Javascript" src="http://code.jquery.com/jquery-1.11.1.js"></script>
+<script src="ScoreClient.js"> </script>
+<script>
+postScore(100);
+postScore(200);
+getScores(function(data) {
+	alert(JSON.stringify(data));
+});
+</script>
+</html>

@@ -1,0 +1,11 @@
+{
+  "name": "TetriCSS-Score-Server",
+  "version": "1.0.0",
+  "private": true,
+  "dependencies": {
+    "express": "*"
+  },
+  "scripts": {
+    "start": "node ScoreServer.js"
+  }
+}
