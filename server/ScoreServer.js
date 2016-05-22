@@ -20,7 +20,11 @@ function ScoreServer() {
 			if (typeof gameServers[key] === 'undefined') {
 				gameServers[key] = [];
 			}
-			gameServers[key].push(req.params.score);
+			try {
+				gameServers[key].push(parseInt(req.params.score));
+			} catch (e) {
+				console.log(e);
+			}
 			res.json(gameServers);
 		});
 	app.use('/api', router);
